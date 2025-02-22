@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "isThisOpen",
+  "description": "Warns you if a tab you're about to open is already open.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "q2.png"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
