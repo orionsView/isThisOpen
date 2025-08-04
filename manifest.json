@@ -5,7 +5,7 @@
   "version": "1.0",
   "action": {
     "default_popup": "hello.html",
-    "default_icon": "q2.png"
+    "default_icon": "question_mark.png"
   },
   "permissions": [
     "tabs"
