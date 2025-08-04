@@ -3,14 +3,23 @@
   "name": "isThisOpen",
   "description": "Warns you if a tab you're about to open is already open.",
   "version": "1.0",
-  "action": {
-    "default_popup": "hello.html",
-    "default_icon": "question_mark.png"
-  },
   "permissions": [
     "tabs"
   ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
-    "service_worker": "myscripts.js"
-  }
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "isThisOpenScript.js"
+      ]
+    }
+  ]
 }
